@@ -34,7 +34,7 @@ $(document).ready(function(){
         dots: true,
         nav: false,
         navText: false,
-        items: 3,
+        items: 4,
         autoplay: true,
         smartSpeed:1000, 
         autoplayTimeout:2500,
@@ -46,8 +46,8 @@ $(document).ready(function(){
         $(this).text('0' + j);
         j++;
     });
-    $('.rotateTitle').css({'width': $('.caruselHolder .container').height(), 'left': '-' + $('.caruselHolder .container').height() / 100 * 37, 'top': $('.caruselHolder .container').height() / 2.2});
     $('#owlProuctCarusel .owl-dots').css('top', '-' + $('#owlProuctCarusel').height() - 135);
+    $('.sliderTitleHolder').css({'margin-top': '-' + ($('.sliderTitleHolder').height() / 2 + 40), 'height': $('.sliderTitleHolder').height()});
 });
 $(window).scroll(function() {
     if ($(window).scrollTop() > 90 ){
