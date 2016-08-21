@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="67" viewBox="0 0 42 67">
-  <image id="Слой_1" data-name="Слой 1" width="42" height="67" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAABDBAMAAAAYFor6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAAD/zDP/zDP/zDP/zDP/zDMAAACuvO5AAAAABXRSTlMAYO8w35LZn5kAAAABYktHRACIBR1IAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAZUlEQVQ4y+3Uuw2AMAxFUUfM4AkQPWIUxNt/FT4RTXwteuSUT0euomtm1maD5/saxyYBdiniiwL2ex3xQwP2vg54EeFNhKfChd9/pOPb4t2iP6VJS5xo0ijuWdI+7mTSVO4vtPoELEClM1AdiL8AAAAASUVORK5CYII="/>
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #F8C026;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M440,3909l6,6-6,6,2,2,8-8-8-8Z" transform="translate(-440 -3907)"/>
 </svg>

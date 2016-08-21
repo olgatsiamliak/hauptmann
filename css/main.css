@@ -50,11 +50,11 @@ width: 100%;}
 .mainNav li a {display: block}
 .mainNav li.outerList > a {padding-right: 14px;
  background: url(../img/arrow-nav.svg) right center no-repeat;
- background-size: 8px 7px;
+ background-size: 8px 4px;
  }
 .mainNav li.outerList:hover > a {
  background: url(../img/shape.svg) right center no-repeat;
- background-size: 8px 7px;
+ background-size: 8px 4px;
     }
 .mainNav li:hover {color: #FFFFFF;background: #343434;}
 .mainNav .outerList.first {padding-left: 0;}
@@ -109,7 +109,7 @@ width: 100%;}
         color: #F8C026;
         background-image: url(../img/line-active.svg);
         background-position: top center;
-        background-size: 15px 6px;
+        background-size: 15px 4px;
         background-repeat: no-repeat;
     }
 #sliderHolder .owl-dot:hover, #owlProuctCarusel .owl-dot:hover {
@@ -197,7 +197,7 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
 .buttonContainer {max-width: 1140px; margin: 53px auto 128px auto;position: relative;padding: 0 20px;}
 #buttonLineBg {height: 8px; background: #F7F7F7; width: calc(100% - 210px);position: absolute;right: 0;top: 23px;}
 .buttonContainer .productButton, .feedbackForm .productButton, .newsContainer .moreNews {background: #F8C026 url(../img/arrow-but.svg) 90.41% center no-repeat;
-  background-size: 11px 7px;
+  background-size: 7px 11px;
   padding: 0 36px 0 23px;color: #FFFFFF; border-radius: 0; height: 51px; text-transform: uppercase; 
   border: none;font-size: 1.3rem;-webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
@@ -205,7 +205,7 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
   transition: .3s ease-in-out;
   }
 .buttonContainer .productButton:hover, .feedbackForm .productButton:hover, .newsContainer .moreNews:hover {background: #343434 url(../img/arrow-but.svg) 90.41% center no-repeat;
-  background-size: 11px 7px;}
+  background-size: 7px 11px;}
 .newsContainer .leftSideContent {width: 51.15%;}
 .newsContainer .rightSideContent {width: 48.85%;
     background: url(../img/description.jpg) top right no-repeat;
@@ -258,7 +258,7 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
     height: 51px;
     font-size: 1.3rem;
      background: url(../img/arrow-but-hover.svg) 90.41% center no-repeat;
-     background-size: 11px 7px;
+     background-size: 7px 11px;
      -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
@@ -266,7 +266,7 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
 }
 .newsContainer .moreInfo:hover {background: #343434;
      background: #343434 url(../img/arrow-but-hover.svg) 90.41% center no-repeat; 
-     background-size: 11px 7px;
+     background-size: 7px 11px;
     }
 footer {
     background: #343434;
@@ -280,7 +280,7 @@ footer {
 .footerNav ul:last-child {margin-right: 0}
 .footerNav ul li:hover a {color: #F9C846;}
 .footerLogoHolder {height: 38px; width: 210px;
-background: url(../img/logo-white.svg) left top no-repeat;
+background: url(../img/logo-footer.svg) left top no-repeat;
 background-size: 210px 39px;
 float: left;
 }
@@ -289,13 +289,6 @@ float: left;
 .mailtoLink {color: #F9C846;}
 .itemContainer {position: relative;}
 .itemContainer img {cursor: pointer}
-.itemContainer:before {opacity: 0;
--webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  cursor: pointer; z-index: 1000;position: absolute; top: 0; left: 0; width: 85%; height: 203px;content: ""; background: url(../img/image-hover.png) top center no-repeat;
-}
 .owl-item:hover > .itemContainer:before {
     opacity: 1
     }
@@ -389,6 +382,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .innerTextHolder h2 {font-size: 2rem;text-transform: uppercase;}
 .innerTextHolder a {color: #F8C026;}
 #feedbackEmail {float: right; margin-left: 6%}
+.separator {width: 3px; height: 3px;border-radius: 50%; background: #FFFFFF;}
 @media screen and (max-width: 1140px) {
 .sliderTitleHolder {
     left: 0;
