@@ -23,20 +23,20 @@ footer, nav, header, section, aside, article, hgroup, main {display: block;}
 p {line-height: 1.5em;}
 header {padding-top: 25px;border-top: 3px solid #F8C026}
 nav.fixed {position: fixed;width: 100%; box-shadow: 0 0 15px #EDEDED;z-index: 1001;top: 0;background: #FFFFFF}
-#languagesMenu {float: right;list-style-type: none;padding: 10px;margin-top: 5px;width: 55px;height: 60px;}
+#languagesMenu {position: absolute; right: 9.25px; top: 1.25px;list-style-type: none;padding: 12.5px 8.5px 12.5px 8.5px;width: 48px;height: 61px;}
 #languagesMenu.openLang {box-shadow: 0px 0px 15px #E7E7E7;}
 #languagesMenu li {text-transform: uppercase;font-size: 1.4rem;cursor: pointer;position: relative;} 
-#languagesMenu li a {display: block}
+#languagesMenu li a {display: block; padding-right: 15px;}
 #languagesMenu .activeLang a {position: relative;width: 35px;padding-right: 20px}
 #languagesMenu .activeLang > a:after {position: absolute;content:""; width: 12px; height: 7px; 
-background: url(../img/arrow-lang.svg) center center no-repeat; right: 0px; top: 4px;
+background: url(../img/arrow-lang.svg) center center no-repeat; right: 0; top: 4px;
 background-size: 8px 6px;
 }
 #languagesMenu #langChoice {display: none;left: 0;
-    top: 7px;
+    top: 5.5px;
     list-style: outside none none;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 16.5px;
     position: absolute;
     z-index: 999;
 width: 100%;}
@@ -46,7 +46,7 @@ width: 100%;}
      background-size: 266px 48px;
     margin-right: 112px;}
 .mainNav {list-style-type: none;text-transform: uppercase;font-size: 1.2rem;}
-.mainNav li {display: inline-block;margin-bottom: 0; padding: 20px 16px 27px 16px;margin-right: 3px;position: relative;}
+.mainNav li {display: inline-block;margin-bottom: 0; padding: 22px 14px 22px 14px;margin-right: 3px;position: relative;}
 .mainNav li a {display: block}
 .mainNav li.outerList > a {padding-right: 14px;
  background: url(../img/arrow-nav.svg) right center no-repeat;
@@ -62,7 +62,7 @@ width: 100%;}
 .mainNav .outerList.first > ul {margin-left: -16px;padding-left: 16px;width: calc(121% + 16px);}
 .mainNav .outerList.first:hover:before {position: absolute;content:"";top: 0;left: -16px; width: 16px; height: 100%; background: #343434}
 .mainNav li ul {display: none; left: 0;
-    top: 61px;
+    top: 58px;
     list-style: outside none none;
     margin: 0;
     padding-top: 15px;
@@ -78,8 +78,7 @@ width: 100%;}
 .mainNav li.outerList > ul li:last-child {padding-bottom: 19px}
 .mainNav li:hover > ul {display: block}
 .imageHolder {position: relative;}
-.sliderTitleHolder.container {position: absolute;width: 43.46%;}
-.sliderTitleHolder {position: absolute; top: 50%; font-size: 4rem;color: #FFFFFF;text-transform: uppercase;z-index: 999;font-weight: 800;left: 8.08%;
+.sliderTitleHolder {position: absolute; top: -50%; width: 48.08%;font-size: 4rem;color: #FFFFFF;text-transform: uppercase;z-index: 999;font-weight: 800;left: 15px;
     font-family: Arial Black, Arial Black, Gadget, sans-serif;}
 #sliderHolder .owl-dots { 
     position: absolute;
@@ -118,12 +117,12 @@ width: 100%;}
 #chemistryChallange, #hauptmanDescription {position: relative;z-index: 1000; top: -39px;}
 .leftSideContent {float: left;}
 .rightSideContent {float: right;}
-.mainPageContent {top: -20px; position: relative; min-height: 776px;}
+.mainPageContent {top: -20px; position: relative; height: 776px;}
 .mainPageContent .leftSideContent {
     width: 48.85%;
     background: url(../img/home.jpg) left top no-repeat; 
     background-size: cover;
-    min-height: 776px;
+    height: 776px;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -136,6 +135,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 .mainPageContent .rightSideContent {
     width: 51.15%;
+    height: 776px;
 }
 #chemistryChallange {float: right; width: 350px;background: #343434; height: 410px; padding: 76px 50px 67px 50px;color: #FFFFFF;text-align: center}
 #chemistryChallange p {font-style: italic;font-size: 1.3rem;
@@ -152,29 +152,29 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 }
 .boldStyle {font-weight: 800}
-#hauptmanDescription {height: auto; margin-top: 135px;width: 67.07%; padding: 0 0 40px 125px;background: #FFFFFF;min-width: 350px;}
+#hauptmanDescription {height: auto; margin-top: 135px;width: 67.07%; padding: 0 0 40px 125px;background: #FFFFFF;min-width: 350px;max-width: 585px;}
 #hauptmanDescription h2 {
     font-size: 2rem; text-transform: uppercase; font-weight: 600; padding-right: 66px
     }
 #hauptmanDescription p {
     padding-bottom: 2rem; font-size: 1.5rem; color: #686868;
     }
-.floorsWork {padding-top: 660px;padding-left: 18.11%;}
-.floorsWork p {padding: 0 306px 0 0; font-size: 1.4rem;line-height: 2.5rem; position: relative;}
+.floorsWork {padding-top: 260px;width: 87.40%;padding-bottom: 30px;padding-left: 15px;max-width: 555px; float: right;}
+.floorsWork p {padding: 0 306px 0 0; font-size: 1.4rem;line-height: 2.5rem; position: relative;width: 555px;}
 #floorsWorkCount {position: absolute;width: 110px;height: 5px; background: #FFFFFF; top: -140px; left: 0;}
 .floorsWork p:before {position: absolute;content:"\0031\0032"; top: -83px; left: -6px;width: 111px;height: 68px; font-size: 8.9rem;color: #FFFFFF; text-transform: uppercase;
 font-family: Arial Black, Arial Black, Gadget, sans-serif;
 }
 .floorsWork p span {background: #F8C026;}
-.hauptmanFloorsContainer {background: #F8C026;padding: 36px 0 0 125px;position: absolute; bottom: 0;height: 226px}
+.hauptmanFloorsContainer {width: 51.15%;background: #F8C026;padding: 36px 0 0 125px;position: absolute; bottom: 0;height: 226px;}
 .hauptmanFloors {width: 85.71%; color: #FFFFFF; text-transform: uppercase;min-width: 445px;}
 .hauptmanFloors p:first-child {width: 67.19%;font-weight: bold;padding-bottom: 0;}
-.floorsRange {font-size: 9rem; font-weight: 800;margin-top: -10px}
-.floorsRange span {position: relative;padding-right: 3rem;font-family: Arial Black, Arial Black, Gadget, sans-serif;}
-.floorsRange span:after {position: absolute;content:"\00B0"; top: -3px; right: 0;width: 29px;height: 29px; 
-    font-size: 9rem;color: #FFFFFF; text-transform: uppercase;
+.floorsRange {font-size: 9.05rem; font-weight: 800;margin-top: -10px}
+.floorsRange span {position: relative;padding-right: 37px;font-family: Arial Black, Arial Black, Gadget, sans-serif;}
+.floorsRange span:after {position: absolute;content:"\00B0"; top: -1px; right: 9px;width: 29px;height: 29px; 
+    font-size: 9.05rem;color: #FFFFFF; text-transform: uppercase;
 }
-.titleHolder {text-transform: uppercase;font-size: 2.5rem;font-weight: bold; display: inline-block; width: 200px;padding-bottom: 1.5rem}
+.titleHolder {text-transform: uppercase;font-size: 2.2rem;font-weight: bold; display: inline-block; width: 200px;padding-bottom: 1.5rem}
 .caruselHolder .titleHolder  {padding-bottom: 4rem}
 .caruselHolder {margin: 37px 0;position: relative;}
 .itemContainer .productTitleHolder {position: relative;padding-top: 1.5rem}
@@ -188,18 +188,18 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
 .caruselHolder .imageContainer img {width: 76.08%;}
 #owlProuctCarusel .owl-dots { 
     position: absolute;
-    right: 40px;
+    right: 122.5px;
     margin-top: 15px;
     z-index: 999;
     font-weight: bold;
 }
-.productDescHolder {font-weight: 600;}
-.buttonContainer {max-width: 1140px; margin: 53px auto 128px auto;position: relative;padding: 0 20px;}
-#buttonLineBg {height: 8px; background: #F7F7F7; width: calc(100% - 210px);position: absolute;right: 0;top: 23px;}
+.productDescHolder {font-weight: 600;text-transform: uppercase;}
+.buttonContainer {max-width: 1140px; margin: 53px auto 128px auto;position: relative;padding: 0 15px;}
+#buttonLineBg {height: 8px; background: #F7F7F7; width: calc(100% - 220px);position: absolute;right: 15px;top: 23px;}
 .buttonContainer .productButton, .feedbackForm .productButton, .newsContainer .moreNews {background: #F8C026 url(../img/arrow-but.svg) 90.41% center no-repeat;
-  background-size: 7px 11px;
+  background-size: 5px 9px;
   padding: 0 36px 0 23px;color: #FFFFFF; border-radius: 0; height: 51px; text-transform: uppercase; 
-  border: none;font-size: 1.3rem;-webkit-transition: .3s ease-in-out;
+  border: none;font-size: 1.15rem;-webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -210,7 +210,7 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
 .newsContainer .rightSideContent {width: 48.85%;
     background: url(../img/description.jpg) top right no-repeat;
     background-size: cover;
-    min-height: 508px;
+    min-height: 515px;
     padding-top: 201px;
     padding-left: 95px;
     padding-bottom: 100px;
@@ -226,7 +226,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 }
 .companyInformation {
-    padding-right: 17.01%;
+    width: 85.19%;
+    max-width: 460px;
 }
 .companyInformation p {
     line-height: 2.6rem
@@ -238,9 +239,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 font-family: Arial Black, Arial Black, Gadget, sans-serif;
 
 }
-.newsList {list-style-type: none;padding-left: 17.29%;padding-right: 22.7%}
+.newsListContainer {float: right; width: 87.97%; max-width: 585px; padding-left: 15px;padding-right: 125px;}
+.newsList {list-style-type: none;}
 .companyInfoBut {margin-top: 59px}
-.newsList li {padding-bottom: 36px}
+.newsList li {padding-bottom: 38px;margin-bottom: 0}
 .publicationDateDay {font-family: Arial Black, Arial Black, Gadget, sans-serif; font-size: 2.2rem;}
 .publicationDateMonth {font-weight: 600;text-transform: uppercase;font-size: 1.5rem;}
 .newsTitle {font-size: 1.4rem}
@@ -251,12 +253,13 @@ font-family: Arial Black, Arial Black, Gadget, sans-serif;
     display: table;
     clear: both;
 }
-.newsButtonContainer {padding-left: 17.29%}
+.newsButtonContainer {padding-bottom: 60px;}
+.newsButtonContainer button {margin-bottom: 0}
 .companyInfoBut .moreInfo {border: 1px solid #F8C026;
     border-radius: 0; color: #F8C026;     
-    padding: 0 36px 0 23px;
+    padding: 0 34px 0 21px;
     height: 51px;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
      background: url(../img/arrow-but-hover.svg) 90.41% center no-repeat;
      background-size: 7px 11px;
      -webkit-transition: .3s ease-in-out;
@@ -275,16 +278,20 @@ footer {
 }
 .footerNav {clear: both}
 .footerNav ul {list-style-type: none;display: inline-block;vertical-align: top;margin-right: 125px;margin-top: 38px;font-size: 1.4rem;}
-.footerNav ul:first-child {width: 270px;margin-right: 0}
+.footerNav ul {width: 160px;}
 .footerNav ul li span {display: block;margin-bottom:1rem}
-.footerNav ul:last-child {margin-right: 0}
+.footerNav ul:first-child {width: 255px;margin-right: 25px}
+.footerNav ul:nth-child(2) {width: 255px;margin-right: 30px}
+.footerNav ul:nth-child(3) {width: 160px;margin-right: 24.5px}
+.footerNav ul:nth-child(4) {width: 160px;margin-right: 24.5px}
+.footerNav ul:nth-child(5) {width: 160px;margin-right: 0}
 .footerNav ul li:hover a {color: #F9C846;}
 .footerLogoHolder {height: 38px; width: 210px;
 background: url(../img/logo-footer.svg) left top no-repeat;
 background-size: 210px 39px;
 float: left;
 }
-#footerLineBg {right: 0;top: 35px; background: #A3A3A3;height: 2px; margin-bottom: 38px; width:calc(100% - 293px); position: absolute;} 
+#footerLineBg {right: 15px;top: 35px; background: #A3A3A3;height: 2px; margin-bottom: 38px; width:calc(100% - 315px); position: absolute;} 
 #footerLineBg div {height: 2px; background: #F8C026;width: 34.55%}
 .mailtoLink {color: #F9C846;}
 .itemContainer {position: relative;}
@@ -294,11 +301,12 @@ float: left;
     }
 nav, header, footer, #sliderHolder, .mainPageContent, .caruselHolder, .newsContainer {min-width: 1140px;}
 #socialIcons {position: relative;top: -3rem;}
-#socialIcons a {display: inline-block; height: 20px;background-position: center center; background-repeat: no-repeat;margin-right: 25px}
+#socialIcons a {display: inline-block; height: 20px;background-position: center center; background-repeat: no-repeat;}
 #socialIcons a:first-child {
     width: 22px;
     background-size: 22px 15px;
     background-image: url(../img/social/google.svg);
+    margin-right: 15px
 }
 #socialIcons a:first-child:hover {
     background-size: 22px 15px;
@@ -308,6 +316,7 @@ nav, header, footer, #sliderHolder, .mainPageContent, .caruselHolder, .newsConta
     width: 15px;
     background-size: 15px 15px;
     background-image: url(../img/social/fb.svg);
+    margin-right: 17px
    }
 #socialIcons a:nth-child(2):hover {
     background-size: 15px 15px;
@@ -317,6 +326,7 @@ nav, header, footer, #sliderHolder, .mainPageContent, .caruselHolder, .newsConta
     width: 22px;
     background-size: 15px 15px;
     background-image: url(../img/social/in.svg);
+    margin-right: 18px
     }
 #socialIcons a:nth-child(3):hover {
     background-size: 15px 15px;
@@ -326,6 +336,7 @@ nav, header, footer, #sliderHolder, .mainPageContent, .caruselHolder, .newsConta
     width: 17px;
     background-size:17px 15px;
     background-image: url(../img/social/twitter.svg);
+    margin-right: 19px
     }
 #socialIcons a:nth-child(4):hover {
     background-size: 17px 15px;
@@ -335,6 +346,7 @@ nav, header, footer, #sliderHolder, .mainPageContent, .caruselHolder, .newsConta
     width: 15px;
     background-size: 15px 15px;
     background-image: url(../img/social/insta.svg);
+    margin-right: 0;
    }
 #socialIcons a:nth-child(5):hover {
     background-size: 15px 15px;
@@ -359,7 +371,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 .pagetitle {font-size: 5rem;font-family: Arial Black, Arial Black, Gadget, sans-serif;text-transform: uppercase;margin-bottom: 0.25rem}
 .breadcrumbs ul {list-style-type: none;}
-.breadcrumbs ul li {display: inline-block;text-transform: uppercase;font-size: 1.5rem;}
+.breadcrumbs ul li {display: inline-block;text-transform: uppercase;font-size: 1.3rem;}
 #contactsTitleHolder {
     background: url(../img/contact-image.jpg) top center no-repeat;
     background-size: cover;
@@ -382,12 +394,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .innerTextHolder h2 {font-size: 2rem;text-transform: uppercase;}
 .innerTextHolder a {color: #F8C026;}
 #feedbackEmail {float: right; margin-left: 6%}
-.separator {width: 3px; height: 3px;border-radius: 50%; background: #FFFFFF;}
+.separator {display: inline-block;width: 3px; height: 3px;border-radius: 50%; background: #FFFFFF;margin: 0 10px;vertical-align: top;margin-top: 0.7rem}
 @media screen and (max-width: 1140px) {
 .sliderTitleHolder {
-    left: 0;
+    left: 15px;
 }
 .floorsWork, .newsList, .newsButtonContainer {
-    padding-left: 20px
+    padding-left: 15px
 }
+.floorsWork {width: 100%;}
 }
