@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('#langChoice').toggleClass('show');
         $('#languagesMenu').toggleClass('openLang');
     })
-    $('body').click(function (){
+    $('body').click(function (event){
             var target = $(event.target);
             if ( !target.is('a[href]') ) {
                 $('#langChoice').removeClass('show'); 

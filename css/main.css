@@ -239,7 +239,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 font-family: Arial Black, Arial Black, Gadget, sans-serif;
 
 }
-.newsListContainer {float: right; width: 87.97%; max-width: 585px; padding-left: 15px;padding-right: 125px;}
+.newsListContainer {float: right; width: 87.97%; max-width: 585px; padding-right: 125px;}
 .newsList {list-style-type: none;}
 .companyInfoBut {margin-top: 59px}
 .newsList li {padding-bottom: 38px;margin-bottom: 0}
