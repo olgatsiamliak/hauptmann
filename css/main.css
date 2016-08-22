@@ -78,7 +78,7 @@ width: 100%;}
 .mainNav li.outerList > ul li:last-child {padding-bottom: 19px}
 .mainNav li:hover > ul {display: block}
 .imageHolder {position: relative;}
-.sliderTitleHolder {position: absolute; top: -50%; width: 48.08%;font-size: 4rem;color: #FFFFFF;text-transform: uppercase;z-index: 999;font-weight: 800;left: 15px;
+.sliderTitleHolder {position: absolute; width: 48.08%;font-size: 4rem;color: #FFFFFF;text-transform: uppercase;z-index: 999;font-weight: 800;left: 15px;
     font-family: Arial Black, Arial Black, Gadget, sans-serif;}
 #sliderHolder .owl-dots { 
     position: absolute;
