@@ -22,7 +22,7 @@ button, input, textarea, select {cursor: pointer;}
 footer, nav, header, section, aside, article, hgroup, main {display: block;}
 p {line-height: 1.5em;}
 header {padding-top: 25px;border-top: 3px solid #F8C026}
-nav.fixed {position: fixed;width: 100%; box-shadow: 0 0 15px #EDEDED;z-index: 1001;top: 0;background: #FFFFFF}
+nav.fixed {position: fixed;width: 100%; max-width: 100%;box-shadow: 0 0 15px #EDEDED;z-index: 1001;top: 0;background: #FFFFFF}
 #languagesMenu {position: absolute; right: 9.25px; top: 1.25px;list-style-type: none;padding: 12.5px 8.5px 12.5px 8.5px;width: 48px;height: 61px;}
 #languagesMenu.openLang {box-shadow: 0px 0px 15px #E7E7E7;}
 #languagesMenu li {text-transform: uppercase;font-size: 1.4rem;cursor: pointer;position: relative;} 
@@ -123,6 +123,7 @@ width: 100%;}
     background: url(../img/home.jpg) left top no-repeat; 
     background-size: cover;
     height: 776px;
+    position: relative;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -159,7 +160,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 #hauptmanDescription p {
     padding-bottom: 2rem; font-size: 1.5rem; color: #686868;
     }
-.floorsWork {padding-top: 260px;width: 87.40%;padding-bottom: 30px;padding-left: 15px;max-width: 555px; float: right;}
+.floorsWork {padding-top: 260px;width: 87.40%;padding-bottom: 30px;padding-left: 15px;max-width: 555px; float: right;position: absolute; bottom: 15px; right: 0;}
 .floorsWork p {padding: 0 306px 0 0; font-size: 1.4rem;line-height: 2.5rem; position: relative;width: 555px;}
 #floorsWorkCount {position: absolute;width: 110px;height: 5px; background: #FFFFFF; top: -140px; left: 0;}
 .floorsWork p:before {position: absolute;content:"\0031\0032"; top: -83px; left: -6px;width: 111px;height: 68px; font-size: 8.9rem;color: #FFFFFF; text-transform: uppercase;
@@ -232,14 +233,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .companyInformation p {
     line-height: 2.6rem
 }
-#sevenYears {float: left; font-size: 2.5rem;line-height: 2.5rem;font-weight: 600;width: 113px;margin-right: 77px;padding-top: 50px;position: relative;}
-#lineGarant {position: absolute; height: 8px;width: 65px; background: #FFEBEB;top: -110px;left: 0;border-radius: 2px}
+#sevenYears {float: left; font-size: 2.5rem;line-height: 2.5rem;font-weight: 600;width: 113px;margin-right: 77px;padding-top: 50px;position: relative;text-transform: uppercase;}
+#lineGarant {position: absolute; height: 8px;width: 65px; background: #FFEBEB;top: -110px;left: 0;}
 #sevenYears:before {
     position: absolute;content:"\0037"; top: -40px; left: -4px;width: 65px;height: 83px; font-size: 11rem;color: #FFFFFF; text-transform: uppercase;
 font-family: Arial Black, Arial Black, Gadget, sans-serif;
 
 }
-.newsListContainer {float: right; width: 87.97%; max-width: 585px; padding-right: 125px;}
+.newsListContainer {float: right;max-width: 600px; padding-left: 15px;padding-right: 125px;}
 .newsList {list-style-type: none;}
 .companyInfoBut {margin-top: 59px}
 .newsList li {padding-bottom: 38px;margin-bottom: 0}
@@ -398,9 +399,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @media screen and (max-width: 1140px) {
 .sliderTitleHolder {
     left: 15px;
-}
-.floorsWork, .newsList, .newsButtonContainer {
-    padding-left: 15px
 }
 .floorsWork {width: 100%;}
 }
