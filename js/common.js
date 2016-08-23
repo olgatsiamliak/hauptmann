@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
     $('#owlProuctCarusel .owl-dots').css('top', '-' + $('#owlProuctCarusel').height() - 113);
 
-    $('.sliderTitleHolder').css({'margin-top': -($('.sliderTitleHolder').height() / 2 + 40), 'height': $('.sliderTitleHolder').height(), 'top': $('.imageHolder').height() / 2});
+    $('.sliderTitleHolder').css({'height': $('.imageHolder').height() - 50});
 });
 $(window).scroll(function() {
     if ($(window).scrollTop() > 90 ){
