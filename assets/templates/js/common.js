@@ -1,15 +1,4 @@
 $(document).ready(function(){  
-    $('.activeLang').click(function (){
-        $('#langChoice').toggleClass('show');
-        $('#languagesMenu').toggleClass('openLang');
-    })
-    $('body').click(function (event){
-            var target = $(event.target);
-            if ( !target.is('a[href]') ) {
-                $('#langChoice').removeClass('show'); 
-                $('#languagesMenu').removeClass('openLang');
-            }            
-        });
     $("#sliderHolder").owlCarousel({
         loop: true,
         margin: 30,
@@ -46,13 +35,6 @@ $(document).ready(function(){
         $(this).text('0' + j);
         j++;
     });
-    $('#owlProuctCarusel .owl-dots').css('top', '-' + $('#owlProuctCarusel').height() - 113);
-    $(".feedbackForm form").validateIt({
-        onsubmit: function(){
-            $.jGrowl("Сообщение отправлено, ожидайте ответа", { sticky: true });
-        }
-    });
-$("img");
 $("a[rel='colorbox']").colorbox({
  current: "{current}&nbsp;/&nbsp;{total}",
  loop: false,

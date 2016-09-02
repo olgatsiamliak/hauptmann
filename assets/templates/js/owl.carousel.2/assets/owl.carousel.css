@@ -55,8 +55,6 @@
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
-  position: relative;
   z-index: 1;
 }
 .owl-carousel .owl-stage {
@@ -72,11 +70,11 @@
   height: 0;
 }
 .owl-carousel .owl-stage-outer {
-  position: relative;
   overflow: hidden;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
+.caruselHolder .owl-controls.container {position: static;}
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel .owl-controls .owl-dot {
@@ -114,7 +112,7 @@
   user-select: none;
 }
 .owl-carousel .owl-item img {
-  max-width: 90%; margin: 0 auto 1em auto;
+  max-width: 90%; margin: 0 auto 0 auto;
   -webkit-transform-style: preserve-3d;
 }
 #sliderHolder.owl-carousel .owl-item img {max-width: 100%;width: 100%;}
